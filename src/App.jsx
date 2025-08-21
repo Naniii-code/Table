@@ -2,7 +2,6 @@ import './App.css'
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import DownloadIcon from '@mui/icons-material/Download';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-// import AvatarContainer from './utils/AvatarContainer';
 const App =() => {
 
 return(
