@@ -49,7 +49,6 @@ const App = () => {
                 height: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "10px",
-                backgroundColor: "white",
                 cursor: "pointer",
               }}
             >
@@ -61,19 +60,17 @@ const App = () => {
                 height: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "10px",
-                backgroundColor: "white",
                 cursor: "pointer",
               }}
             >
               Settings
             </button>
-            <button
+            <button className="btn"
               style={{
                 width: "80px",
                 height: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "10px",
-                backgroundColor: "#4e46e9",
                 color: "white",
                 cursor: "pointer",
               }}
@@ -100,35 +97,35 @@ const App = () => {
               </tr>
             </thead>
             <tbody>
-              {allusers.map((item)=>
-               <tr
-               key={item.Id}
-                style={{
-                  borderBottom: "1px solid lightgray",
-                  boxShadow: "0px 0px 1px 0px lightgray",
-                }}
-              >
-                <td>{item.name}</td>
-                <td>{item.paymentType}</td>
-                <td>{item.category}</td>
-                <td>{item.percentageValue}</td>
-                <td>
-                  <Tooltip title="Delete">
-                    <DeleteOutlineIcon />
-                  </Tooltip>
-                </td>
-                <td>
-                  <Tooltip title="Download">
-                    <DownloadIcon />
-                  </Tooltip>
-                </td>
-                <td>
-                  <Tooltip title="More">
-                    <MoreVertIcon />
-                  </Tooltip>
-                </td>
-              </tr>
-              )}
+              {allusers.map((item) => (
+                <tr
+                  key={item.Id}
+                  style={{
+                    borderBottom: "1px solid lightgray",
+                    boxShadow: "0px 0px 1px 0px lightgray",
+                  }}
+                >
+                  <td>{item.name}</td>
+                  <td>{item.paymentType}</td>
+                  <td>{item.category}</td>
+                  <td>{item.percentageValue}</td>
+                  <td>
+                    <Tooltip title="Delete">
+                      <DeleteOutlineIcon />
+                    </Tooltip>
+                  </td>
+                  <td>
+                    <Tooltip title="Download">
+                      <DownloadIcon />
+                    </Tooltip>
+                  </td>
+                  <td>
+                    <Tooltip title="More">
+                      <MoreVertIcon />
+                    </Tooltip>
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
