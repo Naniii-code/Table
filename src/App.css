@@ -1,0 +1,69 @@
+body{
+  overflow: hidden;
+}
+.container{
+  width: 90%;
+  height: 92vh;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 5px lightgray;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  gap:'5px'
+}
+
+.btnContainer{
+  display: flex;
+  gap: 20px;
+  margin: 15px;
+}
+
+.headContainer{
+  display: flex;
+  gap: 5px;
+}
+
+.mainSection{
+  width: 100%;
+  height: 95vh;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.table{
+  border-collapse: collapse;
+  width: 99%;
+  height: 80vh;
+  border-radius: 10px;
+}
+
+.mainSection>.table>thead>td{
+  font-family: "Gill Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mainSection>.table>tbody>tr>td{
+  font-family: "Gill Sans", sans-serif;
+  text-align: center;
+  cursor: pointer;
+  font-size: small;
+}
+
+.mainSection>.table>tbody>tr{
+  background-color: white;
+}
+
+.mainSection>.table>tbody>tr:hover{
+  background-color: #f9fbfc;
+}
+
+.mainSection>.table>thead>tr>td{
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+  background-color: #f9fbfc;
+}
+
