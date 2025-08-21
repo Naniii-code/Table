@@ -89,6 +89,7 @@ return(
           <td><DeleteOutlineIcon /></td>
           <td><DownloadIcon /></td>
           <td><MoreVertIcon /></td>
+          
         </tr>
         <tr style={{borderBottom:'1px solid lightgray',boxShadow:'0px 0px 1px 0px lightgray'}}>
           <td>AliceSmith</td>
