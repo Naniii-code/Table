@@ -11,6 +11,7 @@ const App = () => {
     const usersData = users.filter((item) => item.Id !== id);
     setUsers(usersData);
   };
+
   return (
     <div
       style={{
@@ -124,15 +125,17 @@ const App = () => {
                   }}
                 >
                   <td style={{ fontWeight: "bold", color: "#81888c" }}>
-                    {" "}
+                    
                     {item.name}
                     <br />
                     <span style={{ color: "#8c8e8f", fontWeight: "lighter" }}>
                       {item.subName}
                     </span>
                   </td>
-                  <td style={{ color: "#81888c" }}>{item.paymentType}</td>
-                  <td style={{ color: "#81888c" }}>{item.category}</td>
+                  <td style={{ color: "#81888c" }}>
+                    <img style={{width:'30px',height:'30px'}} src={item.paymentType} alt="image" />
+                  </td>
+                  <td style={{color: "#81888c" }}>{item.category}</td>
                   <td style={{ color: "#81888c" }}>{item.percentageValue}</td>
                   <td>
                     <Tooltip title="Delete">
