@@ -36,7 +36,7 @@ body{
 .table{
   border-collapse: collapse;
   width: 99%;
-  height: 80vh;
+  /* height: 80vh; */
   border-radius: 10px;
 }
 
@@ -87,3 +87,8 @@ button:hover{
   background-color: #4a74d6;
 }
 
+@media (max-width:768px){
+  body{
+    overflow: auto;
+  }
+}
