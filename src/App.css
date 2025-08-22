@@ -40,12 +40,20 @@ body{
   border-radius: 10px;
 }
 
-.mainSection>.table>thead>td{
+/* styling for table head row */
+.mainSection>.table>thead>tr{
+ background-color: #f9fbfc;
+}
+
+/* styling for table head row data */
+.mainSection>.table>thead>tr>td{
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
   text-align: center;
 }
 
+
+/* styling for table body row data */
 .mainSection>.table>tbody>tr>td{
   font-family: "Gill Sans", sans-serif;
   text-align: center;
@@ -53,17 +61,13 @@ body{
   font-size: small;
 }
 
+/* styling for table body row  */
 .mainSection>.table>tbody>tr{
   background-color: white;
 }
 
+/* hovering for table body row */
 .mainSection>.table>tbody>tr:hover{
-  background-color: #f9fbfc;
-}
-
-.mainSection>.table>thead>tr>td{
-  text-align: center;
-  font-family: "Gill Sans", sans-serif;
   background-color: #f9fbfc;
 }
 
