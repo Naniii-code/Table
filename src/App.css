@@ -50,14 +50,14 @@ body{
 .mainSection>.table>thead>tr>td{
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
-  text-align: center;
+  /* text-align: center; */
 }
 
 
 /* styling for table body row data */
 .mainSection>.table>tbody>tr>td{
   font-family: "Gill Sans", sans-serif;
-  text-align: center;
+  /* text-align: center; */
   cursor: pointer;
   font-size: small;
 }

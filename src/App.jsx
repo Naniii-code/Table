@@ -107,35 +107,125 @@ const App = () => {
                   height: "60px",
                 }}
               >
-                <td>Full Name</td>
-                <td>Payment Methods</td>
-                <td>Category</td>
-                <td>ClickthroughPercentage</td>
+                <td
+                  style={{
+                    paddingLeft: "20px",
+                    color: "#616578",
+                    fontSize: "0.9rem",
+                  }}
+                >
+                  Full Name
+                </td>
+                <td style={{ color: "#616578", fontSize: "0.9rem" }}>
+                  Payment Methods
+                </td>
+                <td style={{ color: "#616578", fontSize: "0.9rem" }}>
+                  Category
+                </td>
+                <td style={{ color: "#616578", fontSize: "0.9rem" }}>
+                  ClickthroughPercentage
+                </td>
                 <td colSpan="3"></td>
               </tr>
             </thead>
             <tbody>
               {users.map((item) => (
-                <tr 
+                <tr
                   key={item.Id}
                   style={{
                     borderBottom: "1px solid lightgray",
                     boxShadow: "0px 0px 1px 0px lightgray",
-                    height:'44.5px',
+                    height: "44.5px",
                   }}
                 >
-                  <td style={{ fontWeight: "bold", color: "#81888c" }}>
-                    
-                    {item.name}
-                    <br />
-                    <span style={{ color: "#8c8e8f", fontWeight: "lighter" }}>
-                      {item.subName}
-                    </span>
+                  <td
+                    style={{
+                      display: "flex",
+                      marginLeft: "15px",
+                      fontWeight: "bold",
+                      color: "#81888c",
+                      fontFamily: '"Gill Sans", sans-serif',
+                      fontSize: "0.8rem",
+                    }}
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        gap: "8px",
+                        paddingTop: "5px",
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: "flex",
+                          justifyContent: "center",
+                          alignItems: "center",
+                        }}
+                      >
+                        <img
+                          style={{ width: "30px", height: "30px" }}
+                          src={item.Avatar}
+                          alt="images"
+                        />
+                      </div>
+                      <div style={{ display: "flex", flexDirection: "column" }}>
+                        {item.name}
+                        <span
+                          style={{ color: "#8c8e8f", fontWeight: "lighter" }}
+                        >
+                          {item.subName}
+                        </span>
+                      </div>
+                    </div>
                   </td>
+
                   <td style={{ color: "#81888c" }}>
-                    <img style={{width:'30px',height:'30px'}} src={item.paymentType} alt="image" />
+                    <div style={{ display: "flex", gap: "9px" }}>
+                      <img
+                        style={{ width: "30px", height: "30px" }}
+                        src={item.paymentType}
+                        alt="image"
+                      />
+                      <span style={{ paddingTop: "7px" }}>
+                        {item.accountNumber}
+                      </span>
+                    </div>
                   </td>
-                  <td style={{color: "#81888c" }}>{item.category}</td>
+
+                  <td style={{ color: "#81888c" }}>
+                    <button
+                      style={{
+                        backgroundColor: "#edf3f8",
+                        color: "#7168c9",
+                        borderRadius: "10px",
+                        border: "none",
+                      }}
+                    >
+                      {item.category.categ1}
+                    </button>{" "}
+                    <span style={{ color: "white" }}>-</span>{" "}
+                    <button
+                      style={{
+                        border: "none",
+                        backgroundColor: "#fbffe7",
+                        borderRadius: "10px",
+                        color: "#e2bb77",
+                      }}
+                    >
+                      {item.category.categ2}
+                    </button>{" "}
+                    <span style={{ color: "white" }}>-</span>
+                    <button
+                      style={{
+                        border: "none",
+                        backgroundColor: "#fef0f2",
+                        color: "#df89a1",
+                        borderRadius: "10px",
+                      }}
+                    >
+                      {item.category.categ3}
+                    </button>
+                  </td>
                   <td style={{ color: "#81888c" }}>{item.percentageValue}</td>
                   <td>
                     <Tooltip title="Delete">
