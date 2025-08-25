@@ -1,7 +1,6 @@
-import Slider from '@mui/material/Slider';
+
 
 export const allusers = [
-
   {
     Id: 1,
     Avatar: "avatar.svg",
@@ -10,12 +9,13 @@ export const allusers = [
     paymentType: "visa.svg",
     accountNumber: "Ends in ****_**18",
     category: {
-       categ1: "Arts",
-       categ2: "Business",
-       categ3: "Travel",
+      categ1: "Arts",
+      categ2: "Business",
+      categ3: "Travel",
     },
     percentageValue: "40%",
-    Slider: "Slider.png",
+    range: 40,
+    
   },
   {
     Id: 2,
@@ -25,11 +25,12 @@ export const allusers = [
     paymentType: "mastercard.svg",
     accountNumber: "Ends in ****_**98",
     category: {
-       categ1: "Books",
-       categ2: "Computers",
+      categ1: "Books",
+      categ2: "Computers",
+      categ3: "Music"
     },
     percentageValue: "10%",
-    Slider: "Slider.png",
+   range: 10,
   },
   {
     Id: 3,
@@ -39,11 +40,12 @@ export const allusers = [
     paymentType: "visa.svg",
     accountNumber: "Ends in ****_**85",
     category: {
-       categ1: "Kitchen",
-       categ2: "Books",
+      categ1: "Kitchen",
+      categ2: "Books",
+      categ3: "Dance"
     },
     percentageValue: "80%",
-    Slider: "Slider.png",
+    range: 80,
   },
   {
     Id: 4,
@@ -53,10 +55,12 @@ export const allusers = [
     paymentType: "mastercard.svg",
     accountNumber: "Ends in ****_**76",
     category: {
-       categ1: "Furniture",
+      categ1: "Furniture",
+      categ2: "Music",
+      categ3: "Books"
     },
     percentageValue: "40%",
-    Slider: "Slider.png",
+    range: 40,
   },
   {
     Id: 5,
@@ -66,12 +70,12 @@ export const allusers = [
     paymentType: "visa.svg",
     accountNumber: "Ends in ****_**71",
     category: {
-       categ1: "Beauty",
-       categ2: "Apparal",
-       categ3: "Sale"
+      categ1: "Beauty",
+      categ2: "Apparal",
+      categ3: "Sale",
     },
     percentageValue: "60%",
-    Slider: "Slider.png",
+    range: 60,
   },
   {
     Id: 6,
@@ -81,11 +85,12 @@ export const allusers = [
     paymentType: "mastercard.svg",
     accountNumber: "Ends in ****_**99",
     category: {
-       categ1: "AI",
-       categ2: "Machine Learning",
+      categ1: "AI",
+      categ2: "Machine Learning",
+      categ3: "Dance"
     },
     percentageValue: "20%",
-    Slider: "Slider.png",
+    range: 20,
   },
   {
     Id: 7,
@@ -95,12 +100,12 @@ export const allusers = [
     paymentType: "visa.svg",
     accountNumber: "Ends in ****_**65",
     category: {
-       categ1: "Lazy",
-       categ2: "Music",
-       categ3: "Movie",
+      categ1: "Lazy",
+      categ2: "Music",
+      categ3: "Movie",
     },
     percentageValue: "40%",
-    Slider: "Slider.png",
+    range: 40,
   },
   {
     Id: 8,
@@ -110,11 +115,12 @@ export const allusers = [
     paymentType: "mastercard.svg",
     accountNumber: "Ends in ****_**56",
     category: {
-       categ1: "Sports",
-       categ2: "Jogging",
+      categ1: "Sports",
+      categ2: "Jogging",
+      categ3: "Singing"
     },
     percentageValue: "20%",
-    Slider: "Slider.png",
+    range: 20,
   },
   {
     Id: 9,
@@ -124,12 +130,12 @@ export const allusers = [
     paymentType: "visa.svg",
     accountNumber: "Ends in ****_**92",
     category: {
-       categ1: "Beauty",
-       categ2: "Apparal",
-       categ3: "Sale",
+      categ1: "Beauty",
+      categ2: "Apparal",
+      categ3: "Sale",
     },
     percentageValue: "60%",
-    Slider: "Slider.png",
+    range: 60,
   },
   {
     Id: 10,
@@ -139,11 +145,11 @@ export const allusers = [
     paymentType: "mastercard.svg",
     accountNumber: "Ends in ****_**42",
     category: {
-       categ1: "Sports",
-       categ2: "Jogging",
+      categ1: "Sports",
+      categ2: "Jogging",
+      categ3: "Music"
     },
     percentageValue: "20%",
-    Slider: "Slider.png",
+    range: 20,
   },
-
 ];

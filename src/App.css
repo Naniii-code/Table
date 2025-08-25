@@ -1,53 +1,69 @@
-body{
-  overflow: hidden;
+*{
+  box-sizing: border-box;
+}
+.mainContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: black; */
+  /* background-color: green; */
 }
 .container{
   width: 90%;
   height: 92vh;
-  border: 1px solid white;
+  border: 1px solid lightgray;
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 5px lightgray;
+  box-shadow: 0 0 10px 5px #d7dcfc;
   margin-top: 15px;
+  /* background-color: black; */
 }
 
 .header{
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  gap:'5px'
+  /* justify-content: space-between; */
+  /* justify-content: flex-end; */
+  gap:'5px';
+  /* background-color: #4e46e9; */
+}
+
+.btnmainContainer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .btnContainer{
+  width: 100%;
   display: flex;
+  justify-content: flex-end;
   gap: 20px;
   margin: 15px;
 }
 
 .headContainer{
+  width: 100%;
   display: flex;
+  /* flex-direction: row; */
   gap: 5px;
+  /* background-color: red; */
 }
 
-.mainSection{
-  width: 100%;
-  height: 95vh;
-  border: 1px solid white;
-  padding: 10px;
-}
 
 .table{
   border-collapse: collapse;
-  width: 99%;
-  /* height: 80vh; */
-  border-radius: 10px;
+  width: 100%;
 }
 
 /* styling for table head row */
-.mainSection>.table>thead>tr{
+.table>thead>tr{
  background-color: #f9fbfc;
 }
 
 /* styling for table head row data */
-.mainSection>.table>thead>tr>td{
+.table>thead>tr>td{
   font-family: "Gill Sans", sans-serif;
   font-weight: bold;
   /* text-align: center; */
@@ -55,7 +71,7 @@ body{
 
 
 /* styling for table body row data */
-.mainSection>.table>tbody>tr>td{
+.table>tbody>tr>td{
   font-family: "Gill Sans", sans-serif;
   /* text-align: center; */
   cursor: pointer;
@@ -63,12 +79,12 @@ body{
 }
 
 /* styling for table body row  */
-.mainSection>.table>tbody>tr{
+.table>tbody>tr{
   background-color: white;
 }
 
 /* hovering for table body row */
-.mainSection>.table>tbody>tr:hover{
+.table>tbody>tr:hover{
   background-color: #f9fbfc;
 }
 
@@ -88,8 +104,51 @@ button:hover{
   background-color: #4a74d6;
 }
 
+/* .table tbody tr:last-child{
+  border-bottom: none;
+} 
+
+table tbody tr:last-child td{
+  border-bottom: none;
+} */
+
 @media (max-width:768px){
   body{
     overflow: auto;
   }
 }
+
+
+ @media (max-width:750px){
+
+    .container {
+    width: 100%;      
+    height: auto;     
+    overflow-x: scroll;
+  }
+  .mainContainer{
+    width: 100%;
+  }
+  .btnContainer{
+    width: 100%;
+  }
+  .btnmainContainer{
+    width: 100%;
+  }
+
+}
+
+@media(min-width:1440px){
+.mainContainer{
+  height: 100vh;
+}
+  .container{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+   height: 73vh;
+  }
+} 
+
+ 
