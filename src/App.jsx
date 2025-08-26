@@ -129,7 +129,7 @@ const App = () => {
                 style={{
                   borderBottom: "1px solid lightgray",
                   boxShadow: "0px 0px 1px 0px lightgray",
-                  height: "46.2px",
+                  height: "61px",
                 }}
               >
                 <td
@@ -140,13 +140,13 @@ const App = () => {
                     color: "#81888c",
                     fontFamily: '"Gill Sans", sans-serif',
                     fontSize: "0.8rem",
+                    paddingTop: "12px",
                   }}
                 >
                   <div
                     style={{
                       display: "flex",
-                      gap: "8px",
-                      paddingTop: "5px",
+                      gap: "8px", 
                     }}
                   >
                     <div
@@ -218,7 +218,7 @@ const App = () => {
                     {item.category.categ3}
                   </button>
                 </td>
-                <td style={{ display: "flex", gap: "10px", color: "#81888c" }}>
+                <td style={{ display: "flex", gap: "10px", color: "#81888c"}}>
                   <span>
                     <Slider
                       defaultValue={item.range}
