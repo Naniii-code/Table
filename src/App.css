@@ -1,7 +1,3 @@
-*{
-  box-sizing: border-box;
-}
-
 
 .mainContainer{
   width: 100%;
@@ -14,7 +10,7 @@
 }
 .container{
   width: 90%;
-  height: 93vh;
+  height: 92vh;
   border: 1px solid lightgray;
   border-radius: 10px;
   box-shadow: 0 0 10px 5px #d7dcfc;
@@ -136,9 +132,19 @@ table tbody tr:last-child td{
 
 }
 
-@media(min-width:1440px){
+@media(width:1440px){
+  body{
+    overflow: hidden;
+  }
+  .mainContainer{
+    height: 100vh;
+  }
   .container{
-  height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  height: 78vh;
   }
   
 } 
